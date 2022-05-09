@@ -1,0 +1,14 @@
+html {
+    color: red;
+    background-color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+main{
+    background-image: url("fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+

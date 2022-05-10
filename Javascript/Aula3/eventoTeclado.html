@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // onKeyUp: Exibe o caractere e depois executa a ação.
+        // onKeyDown: Executa a ação e depois exibe o caractere.
+        // onKeyPress: Executa a ação e depois exibe o caractere.
+        // OBS: não tem suporte a teclas especiais shift ctrl, alt, F1
+
+        function exibir() {
+            let campo = document.getElementById("campo").value;
+            alert(campo);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="campo" onkeypress="exibir()">
+
+</body>
+
+</html>

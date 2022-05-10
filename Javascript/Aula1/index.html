@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Exibindo uma caixa de mensagem.
+        window.alert("Aprendendo JavaScript");
+
+        // Variáveis
+        let nome = "Fernando";
+        let idade = "26";
+        let altura = 1.7;
+        let estuda = true;
+        let nomeDaEmpresa = "Capgemini";
+        // Exibindo as variáveis no alert
+        window.alert(nome);
+        window.alert(idade);
+        window.alert(altura);
+        window.alert(estuda);
+        window.alert(nomeDaEmpresa);
+
+        //Operadores relacionais
+        window.alert(5 > 4);
+        window.alert(5 < 4);
+        window.alert(5 == 4);
+        window.alert(5 != 4);
+        window.alert(5 >= 4);
+        window.alert(5 <= 4);
+
+        //Condicionais
+        let idade2 = 17;
+        if(idade2>=18){
+            alert("Aprovado!!")
+        }else{
+            alert("Reprovado!")
+        }
+
+        // Condicional aninhada
+        let media = 8.5;
+        if(media==10){
+            alert("Parabéns!");
+        }else if(media>=9){
+            alert("Ótimo")
+        }else if(media >= 8){
+            alert("Bom")
+        }else{
+            alert("Reprovado")
+        }
+
+        //Operador lógico E
+        let media2 = 10;
+        let faltas = 5;
+
+        if(media2>=7 && faltas <=15){
+            alert("Aluno aprovado!")
+        }else{
+            alert("Reprovado!")
+        }
+
+        //Operador Lógico OU
+        let trabalho1 = 3;
+        let trabalho2 = 5;
+
+        if (trabalho1 >= 7 | trabalho2 >= 7) {
+            alert("Aluno aprovado")
+        }else{
+            alert("Reprovado")
+        }
+
+        //Operador lógico NÃO
+        let trabalho = true;
+
+        if(!trabalho==true){
+            alert("Você trabalha!")
+        }else{
+            alert("Você não trabalha")
+        }
+
+        // Estrutura de escolha
+        let codigo = 1;
+        switch (codigo) {
+            case 1:
+                alert("Pizza");
+                break;
+            case 2:
+                alert("Suco");
+                break;
+            case 3:
+                alert("Macarrão");
+                break;
+            default:
+                alert("Código inválido!")
+                break
+        }
+
+        //Laço de repetição
+        let contador = 0;
+        while (contador < 3) {
+            alert("Oi " + contador)
+            contador++;
+        }
+
+        // Laço faça enquanto
+        let i = 0;
+        do {
+            alert(i);
+            i++;
+        } while (i<3);
+
+        //Laço PARA
+        for (let index = 0; index < 3; index++) {
+            alert("O indice vale " + index);
+        }
+
+        //Array - Vetor
+        let cursos = ["HTML", "CSS", "JavaScript",];
+        for (let index = 0; index < cursos.length; index++) {
+            alert("O curso " + index + " é : " + cursos[index]);
+        }
+
+        //Vetor Objetos
+        let cursos2 = [
+            { nome: "HTML", carga: 20, sala: 4, },
+            { nome: "CSS", carga: 10, sala: 5, },
+            { nome: "JavaScript", carga: 20, sala: 6, }
+        ];
+        alert(cursos2[0].nome + " " + cursos2[0].carga);
+
+
+    </script>
+    <title>Aula 1</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

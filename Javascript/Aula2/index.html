@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+    <script>
+
+        //Contador de caracteres
+        let termo = "Aprendendo JavaScript";
+        alert(termo.length);
+
+        //Maiusculas e minusculas
+        let palavra = "InFoRmÁTIca";
+        alert(palavra.toUpperCase());
+        alert(palavra.toLowerCase());
+
+        //Localizar elementos
+        let nome = "Fernando Barbosa";
+        alert(nome.indexOf("o"));
+        alert(nome.lastIndexOf("o"));
+
+        //Extrair elementos
+        let termo2 = "Aprendendo JavaScript";
+        alert(termo.slice(termo2.indexOf("J"), termo2.indexOf("J") + 4));
+
+        //Arredondar valores
+        let nota = 7.39;
+        alert(Math.round(nota))
+
+        //Maior e menor número
+        alert(Math.max(1,-123,123,234,-43234,3,2345));
+        alert(Math.min(1,-123,123,234,-43234,3,2345));
+
+        //Exibir número aleatório
+        let numeroAleatorio = Math.random() * 100;
+        alert(Math.round(numeroAleatorio));
+
+        function somar(numero1, numero2) {
+            return numero1 + numero2;
+        }
+
+        alert(somar(5,6));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

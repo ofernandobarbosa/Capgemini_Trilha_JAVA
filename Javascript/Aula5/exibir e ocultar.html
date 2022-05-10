@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura base Jquery</title>
+
+    <script src="./jQuery/jQuery.js"></script>
+    <script>
+
+        //Ao carregar o documento
+        $(document).ready(function () {
+            //Ocultar
+            $("#ocultar").click(function () {
+                $("img").hide();
+            });
+            //Exibir
+            $("#exibir").click(function () {
+                $("img").show();
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <br>
+    <br>
+    <img src="./src/foto.jpg" width="300rem">
+</body>
+
+</html>
